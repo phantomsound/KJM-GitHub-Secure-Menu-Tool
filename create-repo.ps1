@@ -12,7 +12,7 @@ $headers = Get-GitHubHeaders
 
 if (-not $NewRepoName) {$NewRepoName = Read-Host "New repo name" }
 $visibility = if ($Public) { "public" } else { "private" }
-Write-Host "Creating repository as $visibility:$NewRepoName"
+Write-Host "Creating repository as $visibility: $NewRepoName"
 
 $body = @{
   name        = $NewRepoName
